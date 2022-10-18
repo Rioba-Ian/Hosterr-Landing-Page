@@ -1,0 +1,48 @@
+@use '../util/' as u;
+
+main {
+    max-width: 1200px;
+    margin-inline: auto;
+    // background-color: gold;
+    padding: 5rem 2rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .main__info {
+        width: 75%;
+
+        h1 {
+            font-family: u.$font-Play;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        p {
+            font-family: u.$font-Lato;
+            font-weight: 400;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+
+    & .image__section {
+        img {
+            width: 20rem;
+        }
+    }
+
+    .unsubscribe {
+        img {
+            width: 1rem;
+            margin-right: 0.5rem;
+        }
+
+        display: flex;
+        color: hsla(0, 0%, 0%, 60%);
+        margin-top: 1rem;
+    }
+}

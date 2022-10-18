@@ -1,0 +1,42 @@
+@use "../globals/" as glob;
+@use '../util/' as u;
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+
+
+    font-family: u.$font-Lato;
+
+    .nav__logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 50%;
+        }
+
+        span {
+            font-size: 0.75rem;
+            background: linear-gradient(to right, #eaaf52, #ea5872);
+            border-radius: 1rem;
+            padding: 0.1rem 0.3rem;
+            color: white;
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    a {
+        color: black;
+    }
+}

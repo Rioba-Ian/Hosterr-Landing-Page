@@ -1,0 +1,13 @@
+input[type=email] {
+    // width: 100px;
+    padding: 0.8rem 1.6rem;
+    margin: 0.75rem 0;
+    border: 1px groove rgba(68, 66, 66, 0.2);
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1rem;
+    color: hsla(0, 0%, 0%, 50%);
+}
