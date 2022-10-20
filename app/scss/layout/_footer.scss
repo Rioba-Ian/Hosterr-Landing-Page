@@ -3,10 +3,11 @@ footer {
     align-items: center;
     justify-content: space-around;
 
-    padding: 3rem 0;
+    // padding: 1.25rem 0;
+    height: auto;
 
     position: fixed;
-    background-color: silver;
+    // background-color: silver;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -24,9 +25,12 @@ footer {
         justify-content: space-between;
         gap: 1rem;
 
-        a a:visited {
-            text-decoration: none;
+        a {
             color: black;
+        }
+
+        a a:visited a:active {
+            text-decoration: none;
         }
     }
 
