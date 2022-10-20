@@ -1,23 +1,28 @@
 @use '../util/' as u;
 
 main {
-    max-width: 1200px;
+    max-width: 80vw;
     margin-inline: auto;
-    // background-color: gold;
-    padding: 5rem 2rem;
+    background-color: gold;
+    // padding: 5rem 2rem;
+    font-size: 20px;
 
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // // grid-template-rows: auto;
+
 
     .main__info {
         width: 75%;
 
         h1 {
+            font-size: 3em;
             font-family: u.$font-Play;
             margin-bottom: 1rem;
-            font-size: 3rem;
         }
 
         p {
