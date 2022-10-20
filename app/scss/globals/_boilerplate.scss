@@ -48,3 +48,29 @@ h1 {
 h2 {
     font-size: clamp(1.25rem, 16px + 2vw, 36px);
 }
+
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+}
+
+nav {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem 0.5rem 0.75rem 0.5rem;
+}
+
+footer {
+    grid-area: footer;
+}
