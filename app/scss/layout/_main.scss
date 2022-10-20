@@ -4,16 +4,17 @@
 main {
     max-width: 80vw;
     margin-inline: auto;
-    // background-color: gold;
     font-size: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+
+    .main__section {
+        align-self: center;
+        justify-self: center;
+    }
 
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // // grid-template-rows: auto;
 
 
     .main__info {
@@ -34,12 +35,6 @@ main {
     }
 
 
-    & .image__section {
-        img {
-            width: 20rem;
-        }
-    }
-
     .unsubscribe {
         img {
             width: 1rem;
@@ -49,5 +44,38 @@ main {
         display: flex;
         color: hsla(0, 0%, 0%, 60%);
         margin-top: 1rem;
+    }
+}
+
+.wrapper {
+    position: relative;
+
+
+    >* {
+        position: absolute;
+        width: 100%;
+    }
+
+    .purple {
+        top: 1rem;
+        left: 3rem;
+        transform: rotate(-45deg);
+    }
+
+    .blue {
+        top: 1rem;
+        left: 3rem;
+        transform: rotate(-32.5deg);
+    }
+
+    .pink {
+        top: 1rem;
+        left: 3rem;
+        transform: rotate(-20deg);
+    }
+
+    .hero {
+        top: 1rem;
+        left: 3rem;
     }
 }
