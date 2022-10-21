@@ -83,21 +83,17 @@ main {
 // mobile design
 
 @media only screen and (max-width: 900px) {
-    body {
-
-        overflow-x: hidden;
-    }
 
     main {
-        max-width: 1600px;
-        font-size: 16px;
+        font-size: 4vw;
         // background-color: gold;
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(10rem, 25.5rem) 1fr;
+        grid-template-rows: minmax(10rem, 20rem) 1fr;
         grid-template-areas:
             "content"
             "images";
-
+        margin: 0 auto;
+        padding: 0;
     }
 
     nav>ul {
@@ -110,10 +106,15 @@ main {
 
     .image__section {
         grid-area: content;
+        // background-color: rebeccapurple;
     }
 
     .main__section {
         grid-area: images;
+    }
+
+    .wrapper * {
+        width: 75vw;
     }
 
 }
