@@ -48,7 +48,16 @@ footer {
 @media only screen and (max-width: 560px) {
     footer {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        font-size: 0.7rem;
 
+        .social__links {
+            display: flex;
+            flex-direction: column;
+
+        }
     }
 }

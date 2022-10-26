@@ -4,7 +4,7 @@
 main {
     max-width: 80vw;
     margin-inline: auto;
-    font-size: 20px;
+    font-size: 1.25rem;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr;
@@ -21,7 +21,7 @@ main {
         width: 75%;
 
         h1 {
-            font-size: 3em;
+            font-size: 7vmin;
             font-family: u.$font-Play;
             margin-bottom: 1rem;
         }
@@ -85,7 +85,6 @@ main {
 @media only screen and (max-width: 900px) {
 
     main {
-        font-size: 4vw;
         // background-color: gold;
         grid-template-columns: 1fr;
         grid-template-rows: minmax(10rem, 20rem) 1fr;
@@ -106,15 +105,27 @@ main {
 
     .image__section {
         grid-area: content;
+
         // background-color: rebeccapurple;
     }
 
     .main__section {
         grid-area: images;
+        margin-top: 2em;
+        z-index: 1;
+
+        input {
+            padding: 0.75em 1em;
+
+        }
     }
 
-    .wrapper * {
-        width: 75vw;
+    .main__info p {
+        font-size: 1rem;
+    }
+
+    .unsubscribe p {
+        font-size: 1rem;
     }
 
 }
