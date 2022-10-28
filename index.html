@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./dist/style.css">
+        <title>Hosterr</title>
+        <link rel="stylesheet" href="./index.css">
         <!-- fonts -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,78 +14,72 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap"
             rel="stylesheet">
 
-        <title>Hosterr</title>
+        <!-- font awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <nav>
-            <div class="nav__logo">
-                <img src="./Assets/Logo.svg" alt="The hoisterr company logo">
-                <span>We are hiring</span>
-            </div>
-            <ul>
-                <li><a href="#" target="_blank">Plans</a></li>
-                <li><a href="#" target="_blank">Find Domain</a></li>
-                <li><a href="#" target="_blank">Why Hosterr</a></li>
-            </ul>
+            <div class="container navbar" id="navBar">
+                <div class="logo">
+                    <img src="./Assets/Logo.svg" alt="Hosterr rocket logo">
+                    <p class="accent">Hosterr is Hiring!</p>
+                </div>
 
-            <div class="cta-nav">
-                <a href="#" target="_blank">Sign in</a>
-                <button>Join Waitlist</button>
-            </div>
-            <div class="nav-menu">
 
+                <div class="links">
+                    <a href="#">Plans</a>
+                    <a href="#">Find Domain</a>
+                    <a href="#">Why Hosterr</a>
+                </div>
+
+                <div class="cta">
+                    <a href="#">Sign in</a>
+                    <button class="join-btn">Join Waitlist</button>
+                </div>
+                <a href="#" class="icon" onclick="myNavbar()"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
-
-
         <main>
-            <section class="main__section">
-                <div class="main__info">
+            <div class="container hero">
+                <div class="hero__img">
 
+                    <img class="hero__image" src="./Assets/Hero Image (Model).png" alt="">
+
+                    <img class="hero__image blue" src="./Assets/Blue Shape.svg" alt="">
+                    <img class="hero__image pink" src="./Assets/Pink Shape.svg" alt="Pure pink shape">
+                    <img class="hero__image purple" src="./Assets/Purple Shape.svg" alt="Pure purple shape ">
+
+                </div>
+                <div class="hero__text">
                     <h1>Host your website in less than 5 minutes.</h1>
-                    <p>With Hosterr, get your mobile up and running in no less than 5 minutes with the most competitive
+                    <p>With hosterr, get your website up and running in no less than 5 minutes with the most competitive
                         pricing packages available online.</p>
+                    <form action=".">
+                        <input type="email" placeholder="Enter e-mail address" />
+                        <button class="join-btn">Join Waitlist</button>
+                    </form>
                 </div>
-
-                <div class="main__signup">
-                    <input type="email" placeholder="Enter e-mail address">
-                    <button>Join Waitlist</button>
-                </div>
-                <div class="unsubscribe">
-                    <img src="./Assets/Checkmark.svg" alt="">
-                    <p>No spam, ever. Unsubscribe anytime.</p>
-                </div>
-            </section>
-
-            <section class="image__section">
-                <div class="wrapper">
-
-                    <img src="./Assets/Purple Shape.svg" class="purple" alt="">
-                    <img src="./Assets/Blue Shape.svg" class="blue" alt="">
-                    <img src="./Assets/Pink Shape.svg" class="pink" alt="">
-                    <img src="./Assets/Hero Image (Model).png" class="hero" alt="">
-            </section>
             </div>
         </main>
 
-        <footer>
-            <div class="social__links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+        <footer class="container social">
+            <div class="social__icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
             </div>
-
-            <aside>
-                <img src="./Assets/Help Avatar.svg" alt="Image of a person specialist">
-                <div class="questions">
+            <div class="social__help">
+                <img src="./Assets/Help Avatar.svg" alt="person, a man">
+                <div class="help__text">
                     <p>Have any questions?</p>
-                    <p class="bolden">Talk to a specialist</p>
+                    <p>Talk to a specialist.</p>
                 </div>
-            </aside>
+            </div>
         </footer>
 
-
+        <script src="./app.js"></script>
     </body>
 
 </html>
