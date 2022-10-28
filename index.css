@@ -1,0 +1,269 @@
+:root {
+    --background-color: hsl(42, 59%, 94%);
+    --text-color: white;
+
+    --blue: hsl(223, 79%, 60%);
+    --green: hsl(166, 44%, 48%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 
+===============
+Above are the css resets.
+================
+*/
+
+
+/* generics to be reapplied  */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.join-btn {
+    display: inline-block;
+    background-color: #4977EA;
+    color: #fff;
+
+    padding: 1em 2em;
+    margin-left: 1em;
+
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: 500;
+    border: none;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+    background-color: hsl(223, 95%, 47%);
+}
+
+
+input {
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    border: none;
+    font-size: .875rem;
+    margin-bottom: 1em;
+}
+
+/* end of generics */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.logo img {
+    width: 45%;
+}
+
+.logo p {
+    font-size: .625rem;
+    padding: .375em .75em;
+}
+
+.accent {
+    background: linear-gradient(to right, #eaaf52, #ea5872);
+    color: #fff;
+    border-radius: 2rem;
+}
+
+
+.icon {
+    display: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* end of navbar */
+
+/* start of main section */
+
+.hero {
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.hero__text {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.hero__text h1 {
+    font-family: 'Playfair Display', "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 7vmin;
+}
+
+.hero__text p {
+    margin: 1em 0;
+    width: 75%;
+
+}
+
+.hero__img {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.hero__image:nth-child(1) {
+    position: relative;
+    z-index: 3;
+}
+
+.hero__image:nth-child(2) {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.hero__image:nth-child(3) {
+    position: absolute;
+    transform: rotate(-30deg);
+}
+
+.hero__image:nth-child(4) {
+    position: absolute;
+    transform: rotate(-15deg);
+}
+
+
+
+.hero__img img {
+    width: 90%;
+}
+
+/* end of main section */
+
+
+/* start of footer */
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social__icons * {
+    font-size: 1.5rem;
+    margin-left: 0.5em;
+}
+
+
+.social__help {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .875rem;
+}
+
+.social__help img {
+    width: 20%;
+}
+
+
+.help__text p:nth-child(2) {
+    font-weight: 700;
+}
+
+/* end of footer */
+
+
+
+
+/* for icon in mobile */
+
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__text {
+        width: 100%;
+    }
+
+    input {
+        font-size: 0.75rem;
+    }
+
+    .links,
+    .cta {
+        display: none;
+    }
+
+    .icon {
+        float: right;
+        display: block;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .responsive {
+        position: relative;
+    }
+
+    .responsive .icon {
+        position: absolute;
+        right: 0;
+    }
+
+}
